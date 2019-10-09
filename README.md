@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # my-ddx
 
 ## Project setup
@@ -27,3 +28,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# DDXTravel
+Vue开发叮当侠旅游团队项目
+>>>>>>> origin/master
