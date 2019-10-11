@@ -46,11 +46,12 @@ export default {
   data() {
     return {
       block:'',
-      lines:[]
+      lines:[],
+      loc:'cn'
     };
   },
   created() {
-    this.$axios.get("/api/api/channel/cn").then(res => {
+    this.$axios.get(`/api/api/channel/${this.loc}`).then(res => {
       // console.log(res.data.data.new_lines);
       this.block = res.data.data.new_lines.block
       this.lines = res.data.data.new_lines.lines

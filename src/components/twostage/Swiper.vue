@@ -48,11 +48,12 @@ export default {
   data() {
     return {
       images: [],
-      hot_lines: []
+      hot_lines: [],
+      loc:'cn'
     };
   },
   created() {
-    this.$axios.get("/api/api/channel/cn").then(res => {
+    this.$axios.get(`/api/api/channel/${this.loc}`).then(res => {
       // console.log(res.data.data.hot_lines.lines);
       this.images = res.data.data.slide_show,
       this.hot_lines = res.data.data.hot_lines.lines;

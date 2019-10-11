@@ -34,7 +34,7 @@ export default {
   props: {},
   data() {
     return {
-      title:'国内游'
+      title:'叮当侠'
     };
   },
   methods: {
